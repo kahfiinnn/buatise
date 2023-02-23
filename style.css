@@ -1,0 +1,265 @@
+/* navbar */
+* {
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    height: 540px;
+    position:relative ;
+    text-align: center;
+    
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content:  '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)) ;
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size:40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* info panel */
+.bio {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5 );
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    font-size: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* isi */
+.datadiri {
+    margin-top: 120px;
+}
+
+.datadiri h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.datadiri h3 span {
+    font-weight: 500;
+
+}
+
+.datadiri p {
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 200;
+    margin : 30px 0;
+
+}
+
+/* kegiatan */
+.kegiatan {
+    margin-top: 100px;
+   
+}
+
+.tulisankegiatan {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.kegiatan p {
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* nilai */
+.nilai {
+    margin-bottom: 100px;
+}
+.tulisannilai, .tulisantugas {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: -10px;
+
+    
+}
+.sem1 h4 {
+    text-align: center;
+    font-size: 25px;
+}
+.sem2 h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.ips {
+    font-size: 16px;
+}
+
+/* tugas */
+.tugas {
+    margin-bottom: 250px;
+    text-align: center;
+}
+
+
+.listtugas {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5 );
+}
+
+/* utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+.carousel-inner {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5 );
+}
+
+/* bagian foto */
+.fotoku:hover {
+    scale:1.05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.foto1:hover {
+    scale:1.05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.foto2:hover {
+    scale:1.05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.foto3:hover {
+    scale:1.05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.foto4:hover {
+    scale:1.05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.foto5:hover {
+    scale:1.05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.foto6:hover {
+    scale:1.05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .footer {
+	background-color: #333;
+	padding: 10px;
+} */
+
+
+/* Dekstop */
+@media (min-width: 992px){
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+
+    }
+    .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC; 
+        width: 50% ;
+        margin: auto; 
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+    
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .datadiri {
+        text-align: left;
+
+    }
+
+}
